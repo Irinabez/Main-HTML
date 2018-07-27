@@ -1,4 +1,3 @@
-//formatted with Eslint
 let a=0,
   initialState = true,
   operand = null;
