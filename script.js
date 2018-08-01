@@ -1,8 +1,15 @@
-let a=0,
-  initialState = true,
+let storedVal = 0,
+  firstInput = true,
   operand = null;
 
-document.getElementById('result').value = '0';
+
+function read() {
+  return document.getElementById('result').value || '0';
+}
+
+function write(value) {
+  document.getElementById('result').value = value;
+}
 
 function toInput(id) {
   console.log(operand);
@@ -76,3 +83,4 @@ function clearToInitialState() {
   initialState = true;
   operand = null;
 }
+
